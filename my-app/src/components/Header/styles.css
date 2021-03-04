@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0 40px 0 130px;
+  height: 80px;
+  background-color: #151727;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  right: 120px;
+  width: 1px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.header__links > span {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 40px;
+  letter-spacing: 0.05rem;
+}
+
+.header__links:hover {
+  cursor: default;
+}
+
+.header__links > span:last-child {
+  position: relative;
+  color: #39d1a4;
+  margin-left: 80px;
+  letter-spacing: 0.2rem;
+}
