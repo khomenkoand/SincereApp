@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Content from "./Content";
 import News from "../routes/News";
+import Home from "../routes/Home";
 import "./App.css";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <Content>
           <Switch>
             <Route exact path="/news" component={News} />
+            <Route exact path="/" component={Home} />
           </Switch>
         </Content>
         <Footer />
