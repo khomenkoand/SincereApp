@@ -19,25 +19,26 @@
   background: rgba(255, 255, 255, 0.07);
 }
 
-.header__links>span {
+.header__links > .header__link {
   text-transform: uppercase;
+  text-decoration: none;
+  cursor: default;
   color: #ffffff;
   margin-left: 40px;
   letter-spacing: 0.05rem;
 }
 
-.header__links>span:hover {
-  cursor: default;
+.header__links > .header__link:hover {
   color: #c2c2c2;
 }
 
-.header__links>span:last-child {
+.header__links > .header__link:last-child {
   position: relative;
   color: #39d1a4;
   margin-left: 80px;
   letter-spacing: 0.2rem;
 }
 
-.header__links>span:last-child:hover {
+.header__links > .header__link:last-child:hover {
   color: #4c9e86;
 }
