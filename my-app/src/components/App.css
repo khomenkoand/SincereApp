@@ -4,6 +4,12 @@
     url(../fonts/ubuntu/Ubuntu-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url(../fonts/oswald/Oswald-Regular.ttf) format("truetype");
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +17,27 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+}
+
+p {
+  margin: 12px 0 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: Oswald;
+  letter-spacing: 0.02rem;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
 }
