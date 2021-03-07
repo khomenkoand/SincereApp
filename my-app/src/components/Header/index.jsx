@@ -1,4 +1,4 @@
-import Logo from "./atoms/Logo";
+import Logo from "../../images/Logo";
 import "./styles.css";
 
 const Header = () => {

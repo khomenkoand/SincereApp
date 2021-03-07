@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Footer from "./Footer";
 import Content from "./Content";
 import News from "../routes/News";
 import "./App.css";
@@ -10,6 +11,7 @@ const App = () => {
       <Content>
         <News />
       </Content>
+      <Footer />
     </div>
   );
 };
