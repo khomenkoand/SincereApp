@@ -16,7 +16,7 @@ const Header = () => {
         <Link to="/news" className="header__link">
           Новости
         </Link>
-        <Link to="/sign-in" className="header__link">
+        <Link to="/login" className="header__link">
           Вход
         </Link>
       </div>

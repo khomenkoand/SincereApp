@@ -1,0 +1,12 @@
+.login {
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+.login__error {
+  color: red;
+}
+
+.MuiButton-root.MuiButtonBase-root {
+  margin: 25px 0 0;
+}
