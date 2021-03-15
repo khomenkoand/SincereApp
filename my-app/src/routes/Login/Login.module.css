@@ -5,6 +5,7 @@
 
 .login__error {
   color: red;
+  margin: 12px 0;
 }
 
 .MuiButton-root.MuiButtonBase-root {

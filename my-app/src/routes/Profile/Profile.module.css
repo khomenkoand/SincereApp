@@ -11,8 +11,16 @@
     margin: 0 50px 0 300px;
 }
 
+.profile > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 130px;
+}
+
 .profile > div > p {
     font-size: 24px;
+    margin: 0;
 }
 
 .profile > p:last-child {
