@@ -3,6 +3,7 @@
 This is a demo, where you are able to check my ReactJs knowledges.
 
 At first you need to install node modules: 
+# cd my-app
 # npm i
 # yarn
 
