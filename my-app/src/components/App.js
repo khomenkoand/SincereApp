@@ -5,6 +5,7 @@ import Content from "./Content";
 import News from "../routes/News";
 import Home from "../routes/Home";
 import Login from "../routes/Login";
+import Profile from "../components/Profile";
 import "./App.css";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route exact path="/news" component={News} />
             <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/profile" component={Profile} />
           </Switch>
         </Content>
         <Footer />

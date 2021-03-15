@@ -58,7 +58,7 @@ const Login = () => {
       {error_message ? <p className="login__error">{error_message}</p> : null}
       <Button
         onClick={handleClick}
-        color="primary"
+        color="default"
         variant="outlined"
         size="medium"
         fullWidth
