@@ -1,7 +1,7 @@
-import "./styles.css";
+import styles from "./Home.module.css";
 
 const Home = () => (
-  <div className="home">
+  <div className={styles.home}>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt atque
       quam odio, veniam perferendis deleniti voluptatem quaerat debitis

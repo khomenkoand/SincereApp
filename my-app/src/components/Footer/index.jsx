@@ -1,16 +1,17 @@
+import classnames from "classnames";
 import Logo from "../../images/Logo";
 import FbIcon from "../../images/FbIcon";
 import InstIcon from "../../images/InstIcon";
-import "./styles.css";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer__logo">
+    <div className={styles.footer}>
+      <div className={styles.footer__logo}>
         <Logo />
       </div>
 
-      <div className="footer__documents">
+      <div className={styles.footer__documents}>
         <h2>Документы</h2>
         <ul>
           <li>
@@ -21,15 +22,15 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="footer__contacts">
+      <div className={styles.footer__contacts}>
         <h2>Контакты</h2>
         <div>
-          <div className="footer__contact facebook">
+          <div className={classnames(styles.footer__contact, styles.facebook)}>
             <a href="#0">
               <FbIcon />
             </a>
           </div>
-          <div className="footer__contact instagram">
+          <div className={classnames(styles.footer__contact, styles.instagram)}>
             <a href="#0">
               <InstIcon />
             </a>

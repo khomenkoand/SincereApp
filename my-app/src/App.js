@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
-import Content from "./Content";
-import News from "../routes/News";
-import Home from "../routes/Home";
-import Login from "../routes/Login";
-import Profile from "../components/Profile";
-import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Content from "./components/Content";
+import News from "./routes/News";
+import Home from "./routes/Home";
+import Login from "./routes/Login";
+import Profile from "./routes/Profile";
+import styles from "./App.module.css";
 
 const App = () => {
   return (
-    <div className="app">
+    <div className={styles.app}>
       <Router>
         <Header />
         <Content>

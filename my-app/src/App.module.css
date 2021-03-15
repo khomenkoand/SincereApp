@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Ubuntu";
   src: local("Ubuntu"),
-    url(../fonts/ubuntu/Ubuntu-Regular.ttf) format("truetype");
+    url(./fonts/ubuntu/Ubuntu-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Oswald";
   src: local("Oswald"),
-    url(../fonts/oswald/Oswald-Regular.ttf) format("truetype");
+    url(./fonts/oswald/Oswald-Regular.ttf) format("truetype");
 }
 
 body {

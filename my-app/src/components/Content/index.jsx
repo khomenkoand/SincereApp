@@ -1,8 +1,8 @@
 import React from "react";
-import "./styles.css";
+import styles from "./Content.module.css";
 
 const Content = ({ children }) => {
-  return <div className="content">{children}</div>;
+  return <div className={styles.content}>{children}</div>;
 };
 
 export default Content;

@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
 import Logo from "../../images/Logo";
-import "./styles.css";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className={styles.header}>
       <Logo />
-      <div className="header__links">
-        <Link to="/" className="header__link">
+      <div className={styles.header__links}>
+        <Link to="/" className={styles.header__link}>
           Главная
         </Link>
-        <Link to="/profile" className="header__link">
+        <Link to="/profile" className={styles.header__link}>
           Профиль
         </Link>
-        <Link to="/news" className="header__link">
+        <Link to="/news" className={styles.header__link}>
           Новости
         </Link>
-        <Link to="/login" className="header__link">
+        <Link to="/login" className={styles.header__link}>
           Вход
         </Link>
       </div>

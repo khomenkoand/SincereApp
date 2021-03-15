@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router";
 import { Button } from "@material-ui/core";
 import Input from "./atoms/Input";
-import "./styles.css";
+import styles from "./Login.module.css";
 
 const Login = () => {
   const history = useHistory();
@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   return (
-    <div className="login">
+    <div className={styles.login}>
       <Input
         label="Login"
         value={login}
@@ -55,7 +55,9 @@ const Login = () => {
           }))
         }
       />
-      {error_message ? <p className="login__error">{error_message}</p> : null}
+      {error_message ? (
+        <p className={styles.login__error}>{error_message}</p>
+      ) : null}
       <Button
         onClick={handleClick}
         color="default"
