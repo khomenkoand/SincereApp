@@ -5,6 +5,7 @@ import { Button } from "@material-ui/core";
 import Input from "./atoms/Input";
 import { setLogin, setPassword, setError } from "../../actions";
 import { getLogin, getPassword, getError } from "../../selectors";
+import { PROFILE } from "../../constants/Routes";
 import styles from "./Login.module.css";
 
 const Login = ({ login, password, error, setError, setLogin, setPassword }) => {
@@ -13,7 +14,7 @@ const Login = ({ login, password, error, setError, setLogin, setPassword }) => {
   const successCallback = () => {
     sessionStorage.setItem("logged_in", true);
     setError("");
-    history.push("/profile");
+    history.push(PROFILE);
   };
 
   const handleClick = () => {

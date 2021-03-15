@@ -1,18 +1,19 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router";
 import { Button } from "@material-ui/core";
+import { LOGIN } from "../../constants/Routes";
 import styles from "./Profile.module.css";
 
 const Profile = () => {
   const history = useHistory();
   useEffect(() => {
     const logged_in = sessionStorage.getItem("logged_in");
-    !logged_in && history.push("/login");
+    !logged_in && history.push(LOGIN);
   });
 
   const handleClick = () => {
     sessionStorage.removeItem("logged_in");
-    history.push("/login");
+    history.push(LOGIN);
   };
 
   return (

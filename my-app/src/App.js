@@ -6,6 +6,7 @@ import News from "./routes/News";
 import Home from "./routes/Home";
 import Login from "./routes/Login";
 import Profile from "./routes/Profile";
+import { NEWS, HOME, LOGIN, PROFILE } from "./constants/Routes";
 import styles from "./App.module.css";
 
 const App = () => {
@@ -15,10 +16,10 @@ const App = () => {
         <Header />
         <Content>
           <Switch>
-            <Route exact path="/news" component={News} />
-            <Route exact path="/" component={Home} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/profile" component={Profile} />
+            <Route exact path={NEWS} component={News} />
+            <Route exact path={HOME} component={Home} />
+            <Route exact path={LOGIN} component={Login} />
+            <Route exact path={PROFILE} component={Profile} />
           </Switch>
         </Content>
         <Footer />
